@@ -19,6 +19,28 @@ class ViewController: UIViewController, UITableViewDataSource {
         fetchPosts()
 
     }
+    
+    // Adding the prepare for function to check for the segue to the post details
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // 1. Verify the segue identifier matches what you set in storyboard
+        if segue.identifier == "showDetail" {
+            // 2. Get the selected index path
+            guard let indexPath = tableView.indexPathForSelectedRow else {
+                print("⚠️ No row selected")
+                return
+            }
+            
+            // 3. Get the destination view controller
+            guard let detailVC = segue.destination as? DetailViewController else {
+                print("⚠️ Destination is not DetailViewController")
+                return
+            }
+            
+            // 4. Pass the selected post
+            detailVC.post = posts[indexPath.row]
+            print("ℹ️ Passing post: \(posts[indexPath.row].summary)")
+        }
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count

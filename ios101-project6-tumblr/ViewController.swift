@@ -22,21 +22,24 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     // Adding the prepare for function to check for the segue to the post details
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // 1. Verify the segue identifier matches what you set in storyboard
-        if segue.identifier == "showDetail" {
-            // 2. Get the selected index path
+        print("Segue identifier: \(segue.identifier ?? "nil")")
+        print("Destination type: \(type(of: segue.destination))")
+        print("ℹ️ Preparing for segue: \(segue.identifier ?? "no identifier")")
+        
+        if segue.identifier == "show" {
             guard let indexPath = tableView.indexPathForSelectedRow else {
                 print("⚠️ No row selected")
                 return
             }
             
-            // 3. Get the destination view controller
+            print("ℹ️ Selected row: \(indexPath.row)")
+            print("ℹ️ Post at this row: \(posts[indexPath.row])")
+            
             guard let detailVC = segue.destination as? DetailViewController else {
                 print("⚠️ Destination is not DetailViewController")
                 return
             }
             
-            // 4. Pass the selected post
             detailVC.post = posts[indexPath.row]
             print("ℹ️ Passing post: \(posts[indexPath.row].summary)")
         }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40080D0F2DA74D3B00574E8D /* Merriweather-VariableFont_opsz,wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40080D0E2DA74D3B00574E8D /* Merriweather-VariableFont_opsz,wdth,wght.ttf */; };
 		40C504A02DA413290012413B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C5049F2DA413290012413B /* DetailViewController.swift */; };
 		ED54EF4D29D5382800B6AD22 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED54EF4C29D5382800B6AD22 /* String+Extensions.swift */; };
 		ED59161029BC307D000F25AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59160F29BC307D000F25AE /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40080D0E2DA74D3B00574E8D /* Merriweather-VariableFont_opsz,wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-VariableFont_opsz,wdth,wght.ttf"; sourceTree = "<group>"; };
 		40C5049F2DA413290012413B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		ED54EF4C29D5382800B6AD22 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		ED59160C29BC307D000F25AE /* ios101-project6-tumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios101-project6-tumblr.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +74,7 @@
 				ED59162529BC4CC8000F25AE /* PostCell.swift */,
 				ED59162329BC4921000F25AE /* Post.swift */,
 				ED59161529BC307D000F25AE /* Main.storyboard */,
+				40080D0E2DA74D3B00574E8D /* Merriweather-VariableFont_opsz,wdth,wght.ttf */,
 				ED54EF4C29D5382800B6AD22 /* String+Extensions.swift */,
 				ED59161829BC307E000F25AE /* Assets.xcassets */,
 				ED59161A29BC307E000F25AE /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED59161C29BC307E000F25AE /* LaunchScreen.storyboard in Resources */,
+				40080D0F2DA74D3B00574E8D /* Merriweather-VariableFont_opsz,wdth,wght.ttf in Resources */,
 				ED59161929BC307E000F25AE /* Assets.xcassets in Resources */,
 				ED59161729BC307D000F25AE /* Main.storyboard in Resources */,
 			);
